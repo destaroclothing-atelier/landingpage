@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destaro Atelier - Landing Page</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background: #f9f9f9;
+    }
+
+    /* Header dengan GIF sebagai elemen <img> */
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        position: relative;
+        background: #000;
+    }
+    header img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: auto 0 20px auto;
+        color: #ddd;
+    }
+    .cta-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 15px 30px;
+        background: #ff6600;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .cta-btn:hover {
+        background: #e65c00;
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        flex: 1 1 250px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .feature-card h3 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        text-decoration: none;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        z-index: 9999;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        background: #1a1a1a;
+        color: white;
+    }
+
+    /* Form Styles */
+    .contact-form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .contact-form button {
+        background: #ff6600;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .contact-form button:hover {
+        background: #e65c00;
+    }
+
+    /* Tambahan untuk modul produk */
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .product-card {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 250px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.imgur.com/GpP4QIC.gif" alt="Header GIF">
+    <h1>Destaro Atelier</h1>
+    <p>Selamat datang di Destaro Atelier. Kami menghadirkan produk dan layanan terbaik untuk kebutuhan kreatif Anda.</p>
+    <a href="#contact" class="cta-btn">Hubungi Kami</a>
+</header>
+
+<section>
+    <h2>Layanan Kami</h2>
+    <div class="features">
+        <div class="feature-card">
+            <h3>Produk Eksklusif</h3>
+            <p>Produk berkualitas tinggi dengan desain modern dan unik.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Custom Order</h3>
+            <p>Kami menerima pesanan kustom sesuai kebutuhan dan preferensi Anda.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Layanan Cepat</h3>
+            <p>Proses cepat dan profesional dari pemesanan hingga pengiriman.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Produk Kami</h2>
+    <div class="products">
+        <!-- Contoh produk, mudah ditambahkan -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Produk 1">
+            <h3>Produk 1</h3>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Produk 2">
+            <h3>Produk 2</h3>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x150" alt="Produk 3">
+            <h3>Produk 3</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Hubungi Kami</h2>
+    <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282225744744" class="whatsapp-btn" target="_blank">📱</a>
+
+<footer>
+    &copy; 2025 Destaro Atelier. All Rights Reserved.
+</footer>
+
+<script>
+// Simple alert saat submit form
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Terima kasih! Pesan Anda telah terkirim.");
+    this.reset();
+});
+</script>
+
+</body>
+</html>
